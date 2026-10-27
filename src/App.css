@@ -19,3 +19,10 @@
   color: #333d4b;
 }
 .intro h1 { font-size: 20px; }
+.record-button { min-height: 44px; width: 100%; text-align: left; font: inherit; background: transparent; border: 0; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.filters button { min-height: 44px; padding: 8px 12px; font: inherit; border: 1px solid #aeb5bf; border-radius: 8px; background: white; }
+.filters button[aria-pressed="true"] { background: #e5e8eb; }
+.record-button { padding: 12px 0; line-height: 1.5; }
+.banner-ad { width: 100%; margin-top: 32px; }
+.intro select { min-height: 44px; font: inherit; }

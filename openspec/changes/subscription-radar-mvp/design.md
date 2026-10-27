@@ -48,7 +48,7 @@ pages/Dashboard, SubscriptionForm, SubscriptionDetail과 실제 재사용되는 
 
 설치 SDK 선언에서 TossAds.initialize, initialize.isSupported, attachBanner와 반환값 destroy가 존재함을 확인했다. 구현 때 해당 옵션·콜백 타입과 공식 광고 안내를 확인해 사용한다. 상위에서 지원 검사 후 초기화를 한 번 수행하고 홈의 BannerAd가 DOM 마운트 후 attach한다. 해제·늦은 콜백·StrictMode 재마운트에도 인스턴스가 누적되지 않게 한다. 초기화 실패는 앱 전체 로드 실패로 전파하지 않는다.
 
-개발에서만 공식 테스트 ID를 사용한다. 운영은 `VITE_SUBSCRIPTION_RADAR_BANNER_AD_GROUP_ID` 같은 프로젝트 환경 설정에서 주입하고 발급 전에는 미설정으로 둔다. 운영 그룹 누락·미지원·No Fill·실패는 슬롯 높이까지 제거한다. 홈 목록 하단 폭 100%로 배치하고 CTA와 간격을 둔다. 기획서의 높이·최소 앱 버전 숫자는 플랫폼 지원 검사와 실기기 결과를 우선하며 현재 정책 확인 없이 강제 버전 분기를 만들지 않는다.
+개발에서만 공식 테스트 ID를 사용한다. 운영은 `VITE_SUBSCRIPTION_RADAR_BANNER_AD_GROUP_ID` 같은 프로젝트 환경 설정에서 주입하고 발급 전에는 미설정으로 둔다. 운영 그룹 누락·미지원·No Fill·실패는 슬롯 높이까지 제거한다. 홈 목록 하단 폭 100%로 배치하고 CTA와 간격을 둔다. 공식 배너 안내에 따라 토스 앱 5.241.0 미만은 배너를 부착하지 않고, 버전을 확인할 수 없거나 SDK 지원 검사가 실패해도 광고를 표시하지 않는다.
 
 ### 6. 테스트와 단계별 완료 판정
 

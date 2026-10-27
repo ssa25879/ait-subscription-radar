@@ -1,0 +1,28 @@
+﻿.subscription-form {
+  padding: 24px 24px calc(34px + env(safe-area-inset-bottom));
+  word-break: keep-all;
+}
+.subscription-form form, .subscription-form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.subscription-form fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.subscription-form label { font-size: 15px; margin-top: 12px; }
+.subscription-form input, .subscription-form select {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 48px;
+  font: inherit;
+  font-size: 16px;
+  padding: 10px 12px;
+  border: 1px solid #aeb5bf;
+  border-radius: 8px;
+  background: white;
+}
+.subscription-form p { font-size: 15px; margin: 0; }
+.subscription-form button { min-height: 44px; }
