@@ -1,0 +1,21 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+@media (min-width: 481px) {
+  #root {
+    background-color: #ffffff !important;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+.intro {
+  padding: 24px 24px calc(24px + env(safe-area-inset-bottom));
+  line-height: 1.6;
+  word-break: keep-all;
+  color: #333d4b;
+}
+.intro h1 { font-size: 20px; }
