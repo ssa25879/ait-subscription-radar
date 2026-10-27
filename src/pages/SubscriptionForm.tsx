@@ -41,7 +41,7 @@ export function SubscriptionForm({ initial, saving, error, onSave, onCancel }: P
       </fieldset>
       {error && <p role="alert">{error}</p>}
       <Button type="submit" disabled={saving}>{saving ? '저장 중' : '저장'}</Button>
-      <Button type="button" disabled={saving} onClick={onCancel}>취소</Button>
+      <Button type="button" variant="weak" disabled={saving} onClick={onCancel}>취소</Button>
     </form>
   </section>;
 }
